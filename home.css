@@ -12,6 +12,19 @@ body {
     margin-bottom: 0px;
     transition: 0.3s;
   }
+
+img {
+  height: 500px;
+  position: flex;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
   
   .side-bar {
     height: 100vh;
