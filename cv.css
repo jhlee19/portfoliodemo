@@ -1,0 +1,132 @@
+body {
+    background: white;
+    letter-spacing: 0.1em;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 100px;
+    color: #240600;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+  }
+  
+  .side-bar {
+    height: 100vh;
+    justify-content: left;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+  }
+  
+  .list {
+    padding: 8px 0;
+  }
+  
+  .works {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  
+  .moreinfo {
+    margin-left: 30px;
+  }
+  
+  .sidebar-link {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font-family: Lato, sans-serif;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .sidebar-link::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #B8382C;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+  
+  .sidebar-link:hover {
+    color: #B8382C;
+  }
+  
+  .sidebar-link:hover::after {
+    transform: scaleX(5);
+    transform-origin: left;
+  }
+  
+  .sidebar-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .resume-container {
+    margin-left: 150px;
+    padding-left: 20px;
+  }
+  
+  .resume-section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .info {
+    max-width: 900px;
+  }
+  
+  p {
+    padding-left: 50px;
+    padding-bottom: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3D0600;
+  }
+  
+  h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3D0600;
+    letter-spacing: 0.12em;
+    padding: 0px;
+    border-bottom: solid 2px #3D0600;
+    display: inline;
+    padding-bottom: 3px;
+  }
+  
+  h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3D0600;
+    letter-spacing: 0.12em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin:0px;
+  }
+  
+  .blackout {
+    font-family: Lato, sans-serif;
+    color: red;
+    text-decoration: underline italic;
+  }
+  
+  .blackout:hover {
+    color: #85484C;
+    text-decoration: underline;
+  }
