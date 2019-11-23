@@ -3,8 +3,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-img {
-  height: 500px;
+p {
   position: flex;
   margin-left: 100px;
   margin-top: 30px;
