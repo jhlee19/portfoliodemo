@@ -1,0 +1,174 @@
+
+* {box-sizing:border-box}
+
+body {
+  background: white;
+  letter-spacing: 0.1em;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.slideshow-container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  color: #240600;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-bottom: 0px;
+  transition: 0.3s;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+}
+
+.list {
+  padding: 8px 0;
+}
+
+.works {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.moreinfo {
+  margin-left: 30px;
+}
+
+.sidebar-link {
+  justify-content: left;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font-family: Lato, sans-serif;
+  color: black;
+  text-decoration:none;
+  transition: 0.5s;
+}
+
+.sidebar-link::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #B8382C;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.sidebar-link:hover {
+  color: #B8382C;
+}
+
+.sidebar-link:hover::after {
+  transform: scaleX(5);
+  transform-origin: left;
+}
+
+.sidebar-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.slideshow-container {
+  width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+h3 {
+  color: black;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 4px 0px 0px 0px;
+  padding: 0px 0px 0px 10px;
+  font-size: 15px;
+}
+
+p {
+  color: black;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 5px 0px 0px 10px; 
+  font-size: 10px;
+  padding: 0;
+}
